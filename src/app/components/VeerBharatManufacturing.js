@@ -454,8 +454,6 @@
 
 // export default VeerBharatManufacturing;
 
-
-
 'use client';
 import React, { useState, useEffect } from 'react';
 
@@ -477,13 +475,13 @@ const VeerBharatManufacturing = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Fixed Circular Logo - Above Navbar */}
+      {/* Fixed Circular Logo - Bigger for TM visibility */}
       <div className="fixed top-2 left-4 z-[60]">
-        <div className="w-28 h-28 bg-white rounded-full border-4 border-blue-300 shadow-xl flex items-center justify-center hover:scale-105 transition-transform duration-300">
+        <div className="w-36 h-36 bg-white rounded-full border-4 border-blue-300 shadow-xl flex items-center justify-center hover:scale-105 transition-transform duration-300">
           <img
             src="/veer-bharat-logo.jpg"
             alt="Veer Bharat Logo"
-            className="w-20 h-20 rounded-full object-cover"
+            className="w-32 h-32 rounded-full object-contain"
           />
         </div>
       </div>
@@ -498,9 +496,8 @@ const VeerBharatManufacturing = () => {
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between py-4">
-            
-            {/* Brand Name - Moved right to avoid logo overlap */}
-            <div className="relative ml-32">
+            {/* Brand Name - moved right */}
+            <div className="relative ml-40">
               <h1 className="text-2xl md:text-3xl font-black bg-gradient-to-r from-blue-900 via-purple-800 to-pink-700 bg-clip-text text-transparent tracking-wide">
                 VEER BHARAT
               </h1>
@@ -576,12 +573,14 @@ const VeerBharatManufacturing = () => {
       </nav>
 
       {/* Spacer for fixed navbar */}
-      <div className="h-24"></div>
+      <div className="h-28"></div>
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 border-b-2 border-blue-100" id="home">
+      <div
+        className="relative bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 border-b-2 border-blue-100"
+        id="home"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 text-center">
-
           {/* Sri Shyam Agro Industries Title */}
           <div className="mb-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-blue-900 mb-2">
@@ -600,25 +599,40 @@ const VeerBharatManufacturing = () => {
           <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
 
           <p className="text-base sm:text-lg md:text-xl text-blue-800 font-medium max-w-2xl mx-auto leading-relaxed mb-10">
-            Manufacturing Unit Addresses<br/>
-            To Identify manufacturing unit address in India, Read the first two characters of the batch number and see below:
+           
+           
+             Manufacturing Unit Addresses To Identify manufacturing unit address in India, Read the first twocharacters of the batch number and see below:
+            
           </p>
 
           {/* Manufacturing Table */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-blue-200" id="manufacturing">
+          <div
+            className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-blue-200"
+            id="manufacturing"
+          >
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm sm:text-base">
                 <thead>
                   <tr className="bg-gradient-to-r from-blue-100 to-purple-100">
-                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">Serial No.</th>
-                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">Product Name/Brand Name</th>
-                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">Code</th>
-                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">Address</th>
+                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">
+                      Serial No.
+                    </th>
+                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">
+                      Product Name/Brand Name
+                    </th>
+                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">
+                      Code
+                    </th>
+                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">
+                      Address
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="hover:bg-blue-50">
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">1</td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">
+                      1
+                    </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
                       <strong>Kachi Ghani Mustard Oil</strong>
                     </td>
@@ -626,14 +640,19 @@ const VeerBharatManufacturing = () => {
                       <strong>(MO)</strong>
                     </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Mukesh Oil Mill Pvt. Ltd.</strong><br/>
-                      E-59, Riico Industrial Area,<br/>
-                      Khairthal, Rajasthan - 301404.<br/>
+                      <strong>Mukesh Oil Mill Pvt. Ltd.</strong>
+                      <br />
+                      E-59, Riico Industrial Area,
+                      <br />
+                      Khairthal, Rajasthan - 301404.
+                      <br />
                       Fssai Lic. No. 10012013000206
                     </td>
                   </tr>
                   <tr className="hover:bg-red-50">
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">2</td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">
+                      2
+                    </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
                       <strong>Refined Palmolein Oil</strong>
                     </td>
@@ -641,14 +660,19 @@ const VeerBharatManufacturing = () => {
                       <strong>(RR)</strong>
                     </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Ramchandra Ramniwas Oil Mill</strong><br/>
-                      E- 102, Riico Industrial Area,<br/>
-                      Khairthal, Alwar, Rajasthan - 301404.<br/>
+                      <strong>Ramchandra Ramniwas Oil Mill</strong>
+                      <br />
+                      E- 102, Riico Industrial Area,
+                      <br />
+                      Khairthal, Alwar, Rajasthan - 301404.
+                      <br />
                       Fssai Lic. No. 10012013000208
                     </td>
                   </tr>
                   <tr className="hover:bg-orange-50">
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">3</td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">
+                      3
+                    </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
                       <strong>Refined Soyabean Oil</strong>
                     </td>
@@ -656,15 +680,21 @@ const VeerBharatManufacturing = () => {
                       <strong>(SF)</strong>
                     </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Spartan Food Industries</strong><br/>
-                      Factory at Survey No. 155/1, Paiki<br/>
-                      Vill. Kidana, Gandhidham,<br/>
-                      Kutch-370201, Gujarat.<br/>
+                      <strong>Spartan Food Industries</strong>
+                      <br />
+                      Factory at Survey No. 155/1, Paiki
+                      <br />
+                      Vill. Kidana, Gandhidham,
+                      <br />
+                      Kutch-370201, Gujarat.
+                      <br />
                       Fssai Lic. No. 10017021002751
                     </td>
                   </tr>
                   <tr className="hover:bg-purple-50">
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">4</td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">
+                      4
+                    </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
                       <strong>Refined Sunflower Oil Gold</strong>
                     </td>
@@ -672,8 +702,10 @@ const VeerBharatManufacturing = () => {
                       <strong>(MO)</strong>
                     </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Gajanand Oil Mills Pvt. Ltd.</strong><br/>
-                      Khairthal, Alwar, Rajasthan - 301404.<br/>
+                      <strong>Gajanand Oil Mills Pvt. Ltd.</strong>
+                      <br />
+                      Khairthal, Alwar, Rajasthan - 301404.
+                      <br />
                       Fssai Lic. No. 12223010000205
                     </td>
                   </tr>
@@ -689,15 +721,15 @@ const VeerBharatManufacturing = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-8">
-              <div className="p-2 bg-white rounded-2xl shadow-lg border-2 border-blue-200 mr-6 w-24 h-24">
+              <div className="w-32 h-32 bg-white rounded-full shadow-lg border-2 border-blue-200 flex items-center justify-center">
                 <img
                   src="/veer-bharat-logo.jpg"
                   alt="Veer Bharat Logo"
-                  className="w-full h-full rounded-xl object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-28 h-28 rounded-full object-contain"
                 />
               </div>
 
-              <div>
+              <div className="ml-6 text-left">
                 <h2 className="text-4xl font-bold text-blue-900 mb-2">
                   Contact Us
                 </h2>
