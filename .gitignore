@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnp.*
+# next build outputs
+.next/
+out/
+# env & local
+.env
+.env.*.local
+*.local
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+# testing/coverage
+coverage/
+# vercel
+.vercel/
+# lockfiles (optional – jo use karte ho usko allow karo)
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
