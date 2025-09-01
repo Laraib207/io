@@ -25,7 +25,7 @@
 //                   </div>
 //                 </div>
 //               </div>
-              
+
 //               {/* Company Name */}
 //               <div className="text-white hidden sm:block">
 //                 <h1 className="text-xl font-bold">VEER BHARAT</h1>
@@ -129,7 +129,7 @@
 //             <h2 className="text-2xl font-bold text-center mb-4 text-gray-800">
 //               VEER BHARAT KACHI GHANI MUSTARD OIL COLD PRESSED
 //             </h2>
-            
+
 //             <div className="overflow-x-auto border border-gray-300">
 //               <table className="w-full border-collapse">
 //                 <thead>
@@ -163,7 +163,7 @@
 //             <h2 className="text-2xl font-bold text-center mb-4 text-gray-800">
 //               VEER BHARAT OIL PRODUCTS
 //             </h2>
-            
+
 //             <div className="overflow-x-auto border border-gray-300">
 //               <table className="w-full border-collapse">
 //                 <thead>
@@ -264,7 +264,7 @@
 //               </div>
 //               <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-red-500 mx-auto mb-6"></div>
 //             </div>
-            
+
 //             <div className="grid md:grid-cols-3 gap-6">
 //               <div className="text-center p-6 bg-purple-50 rounded-lg">
 //                 <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -276,7 +276,7 @@
 //                 <h3 className="text-lg font-semibold text-purple-800 mb-2">Head Office</h3>
 //                 <p className="text-gray-600 text-sm">Sri Shyam Agro Industries<br/>Rajasthan, India</p>
 //               </div>
-              
+
 //               <div className="text-center p-6 bg-pink-50 rounded-lg">
 //                 <div className="w-12 h-12 bg-gradient-to-r from-pink-600 to-pink-700 rounded-full flex items-center justify-center mx-auto mb-4">
 //                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -286,7 +286,7 @@
 //                 <h3 className="text-lg font-semibold text-pink-800 mb-2">Email</h3>
 //                 <p className="text-gray-600 text-sm">info@veerbharat.com<br/>contact@veerbharat.com</p>
 //               </div>
-              
+
 //               <div className="text-center p-6 bg-red-50 rounded-lg">
 //                 <div className="w-12 h-12 bg-gradient-to-r from-red-600 to-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
 //                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -415,7 +415,7 @@
 //               ADDITIONAL MANUFACTURING PARTNERS
 //             </h3>
 //           </div>
-          
+
 //           <div className="p-6">
 //             <div className="grid md:grid-cols-2 gap-6">
 //               <div className="p-4 border-l-4 border-purple-500 bg-purple-50 rounded-r-lg">
@@ -423,7 +423,7 @@
 //                 <p className="text-sm text-gray-700">Khairthal, Alwar, Rajasthan - 301404.</p>
 //                 <p className="text-xs text-blue-600 font-medium mt-1">FSSAI Lic. No. 12223010000205</p>
 //               </div>
-              
+
 //               <div className="p-4 border-l-4 border-pink-500 bg-pink-50 rounded-r-lg">
 //                 <h4 className="font-bold text-pink-800 mb-2">Mukesh Oil Mill Pvt. Ltd.</h4>
 //                 <p className="text-sm text-gray-700">E-59, Riico Industrial Area, Khairthal, Rajasthan - 301404.</p>
@@ -475,29 +475,28 @@ const VeerBharatManufacturing = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Fixed Circular Logo - Bigger for TM visibility */}
+      {/* Fixed Logo - Bigger Rounded Box */}
       <div className="fixed top-2 left-4 z-[60]">
-        <div className="w-36 h-36 bg-white rounded-full border-4 border-blue-300 shadow-xl flex items-center justify-center hover:scale-105 transition-transform duration-300">
+        <div className="w-48 h-22 bg-white rounded-2xl border-4 border-blue-300 shadow-xl flex items-center justify-center hover:scale-105 transition-transform duration-300">
           <img
             src="/veer-bharat-logo.jpg"
             alt="Veer Bharat Logo"
-            className="w-32 h-32 rounded-full object-contain"
+            className="w-44 h-24 object-contain rounded-xl"
           />
         </div>
       </div>
 
       {/* Navbar */}
       <nav
-        className={`fixed w-full z-50 transition-all duration-500 ${
-          scrolled
-            ? 'bg-white shadow-lg border-b-2 border-blue-200'
-            : 'bg-gradient-to-r from-blue-50 to-purple-50 border-b border-blue-100'
-        }`}
+        className={`fixed w-full z-50 transition-all duration-500 ${scrolled
+          ? 'bg-white shadow-lg border-b-2 border-blue-200'
+          : 'bg-gradient-to-r from-blue-50 to-purple-50 border-b border-blue-100'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between py-4">
-            {/* Brand Name - moved right */}
-            <div className="relative ml-40">
+            {/* Brand Name */}
+            <div className="relative ml-52">
               <h1 className="text-2xl md:text-3xl font-black bg-gradient-to-r from-blue-900 via-purple-800 to-pink-700 bg-clip-text text-transparent tracking-wide">
                 VEER BHARAT
               </h1>
@@ -528,19 +527,16 @@ const VeerBharatManufacturing = () => {
             >
               <div className="w-6 h-6 flex flex-col justify-center space-y-1">
                 <div
-                  className={`w-6 h-0.5 bg-current transform transition-all duration-300 ${
-                    isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''
-                  }`}
+                  className={`w-6 h-0.5 bg-current transform transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''
+                    }`}
                 ></div>
                 <div
-                  className={`w-6 h-0.5 bg-current transition-all duration-300 ${
-                    isMobileMenuOpen ? 'opacity-0' : ''
-                  }`}
+                  className={`w-6 h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''
+                    }`}
                 ></div>
                 <div
-                  className={`w-6 h-0.5 bg-current transform transition-all duration-300 ${
-                    isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''
-                  }`}
+                  className={`w-6 h-0.5 bg-current transform transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''
+                    }`}
                 ></div>
               </div>
             </button>
@@ -548,9 +544,8 @@ const VeerBharatManufacturing = () => {
 
           {/* Mobile Menu */}
           <div
-            className={`md:hidden overflow-hidden transition-all duration-500 ease-out ${
-              isMobileMenuOpen ? 'max-h-64 pb-6' : 'max-h-0'
-            }`}
+            className={`md:hidden overflow-hidden transition-all duration-500 ease-out ${isMobileMenuOpen ? 'max-h-64 pb-6' : 'max-h-0'
+              }`}
           >
             <div className="bg-white rounded-xl shadow-lg border border-blue-200 p-6 mt-4 space-y-3">
               {[
@@ -573,7 +568,7 @@ const VeerBharatManufacturing = () => {
       </nav>
 
       {/* Spacer for fixed navbar */}
-      <div className="h-28"></div>
+      <div className="h-32"></div>
 
       {/* Hero Section */}
       <div
@@ -581,28 +576,16 @@ const VeerBharatManufacturing = () => {
         id="home"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 text-center">
-          {/* Sri Shyam Agro Industries Title */}
           <div className="mb-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-blue-900 mb-2">
               SRI SHYAM AGRO INDUSTRIES
             </h1>
           </div>
 
-          {/* <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-blue-900 mb-4 tracking-tight">
-            VEER BHARAT
-          </h2>
-
-          <p className="text-xl sm:text-2xl md:text-3xl text-purple-700 font-bold mb-6">
-            वाह! मजा आ गया
-          </p> */}
-
           <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6"></div>
 
-          <p className="text-base sm:text-lg md:text-xl text-blue-800 font-medium max-w-2xl mx-auto leading-relaxed mb-10">
-           
-           
-             Manufacturing Unit Addresses To Identify manufacturing unit address in India, Read the first twocharacters of the batch number and see below:
-            
+          <p className="text-sm sm:text-base md:text-xl text-blue-800 font-medium mx-auto mb-10 bg-blue-100 p-3 rounded-lg text-center">
+            <b>Note:</b> To Identify manufacturing unit address in India, Read the first two characters of the batch number and see below.
           </p>
 
           {/* Manufacturing Table */}
@@ -614,99 +597,84 @@ const VeerBharatManufacturing = () => {
               <table className="w-full border-collapse text-sm sm:text-base">
                 <thead>
                   <tr className="bg-gradient-to-r from-blue-100 to-purple-100">
-                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">
-                      Serial No.
-                    </th>
-                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">
-                      Product Name/Brand Name
-                    </th>
-                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">
-                      Code
-                    </th>
-                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">
-                      Address
-                    </th>
+                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">Serial No.</th>
+                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">Product Name/Brand Name</th>
+                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">Code</th>
+                    <th className="border-2 border-blue-300 px-2 sm:px-4 py-2 sm:py-4">Address</th>
                   </tr>
                 </thead>
                 <tbody>
+                  {/* Row 1 */}
                   <tr className="hover:bg-blue-50">
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">
-                      1
-                    </td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">1</td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
                       <strong>Kachi Ghani Mustard Oil</strong>
                     </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center align-top">
-                      <strong>(MO)</strong>
-                    </td>
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Mukesh Oil Mill Pvt. Ltd.</strong>
-                      <br />
-                      E-59, Riico Industrial Area,
-                      <br />
-                      Khairthal, Rajasthan - 301404.
-                      <br />
-                      Fssai Lic. No. 10012013000206
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-red-50">
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">
-                      2
-                    </td>
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Refined Palmolein Oil</strong>
-                    </td>
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center align-top">
+                      <strong>(MO)</strong><br /><br /><br /><br /><br /><br />
                       <strong>(RR)</strong>
                     </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Ramchandra Ramniwas Oil Mill</strong>
-                      <br />
-                      E- 102, Riico Industrial Area,
-                      <br />
-                      Khairthal, Alwar, Rajasthan - 301404.
-                      <br />
+                      <strong>Mukesh Oil Mill Pvt. Ltd.</strong><br />
+                      E-59, Riico Industrial Area,<br />
+                      Khairthal, Rajasthan - 301404.<br />
+                      Fssai Lic. No. 10012013000206<br /><br />
+                      <strong>Ramchandra Ramniwas Oil Mill</strong><br />
+                      E-102, Riico Industrial Area,<br />
+                      Khairthal, Alwar, Rajasthan - 301404.<br />
                       Fssai Lic. No. 10012013000208
                     </td>
                   </tr>
-                  <tr className="hover:bg-orange-50">
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">
-                      3
-                    </td>
+
+                  {/* Row 2 */}
+                  <tr className="hover:bg-red-50">
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">2</td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top"><strong>Refined Palmolein Oil</strong></td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center align-top"><strong>(SF)</strong></td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Refined Soyabean Oil</strong>
-                    </td>
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center align-top">
-                      <strong>(SF)</strong>
-                    </td>
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Spartan Food Industries</strong>
-                      <br />
-                      Factory at Survey No. 155/1, Paiki
-                      <br />
-                      Vill. Kidana, Gandhidham,
-                      <br />
-                      Kutch-370201, Gujarat.
-                      <br />
+                      <strong>Spartan Food Industries</strong><br />
+                      Factory at Survey No. 155/1, Paiki<br />
+                      Vill. Kidana, Gandhidham,<br />
+                      Kutch-370201, Gujarat.<br />
                       Fssai Lic. No. 10017021002751
                     </td>
                   </tr>
-                  <tr className="hover:bg-purple-50">
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">
-                      4
-                    </td>
-                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Refined Sunflower Oil Gold</strong>
-                    </td>
+
+                  {/* Row 3 */}
+                  <tr className="hover:bg-orange-50">
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">3</td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top"><strong>Refined Soyabean Oil</strong></td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center align-top">
-                      <strong>(MO)</strong>
+                      <strong>(MO)</strong><br /><br /><br /><br /><br />
+                      <strong>(RR)</strong><br /><br /><br /><br /><br />
+                      <strong>(SF)</strong>
                     </td>
                     <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
-                      <strong>Gajanand Oil Mills Pvt. Ltd.</strong>
-                      <br />
-                      Khairthal, Alwar, Rajasthan - 301404.
-                      <br />
-                      Fssai Lic. No. 12223010000205
+                      <strong>Mukesh Oil Mill Pvt.Ltd.</strong><br />
+                      Gajanand Oil Mills Pvt. Ltd.<br />
+                      Khairthal, Alwar, Rajasthan - 301404.<br />
+                      Fssai Lic. No. 12223010000205<br /><br />
+                      <strong>Ramchandra Ramniwas Oil Mill</strong><br />
+                      E-102, Riico Industrial Area,<br />
+                      Khairthal, Alwar, Rajasthan - 301404.<br />
+                      Fssai Lic. No. 10012013000208<br /><br />
+                      <strong>Spartan Food Industries</strong><br />
+                      Factory at Survey No. 155/1, Paiki vill. Kidana,<br />
+                      Gandhidham, Kutch-370201, Gujarat.<br />
+                      Fssai Lic. No. 10017021002751
+                    </td>
+                  </tr>
+
+                  {/* Row 4 */}
+                  <tr className="hover:bg-purple-50">
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center font-bold align-top">4</td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top"><strong>Refined Sunflower Oil Gold</strong></td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 text-center align-top"><strong>(SF)</strong></td>
+                    <td className="border-2 border-blue-200 px-2 sm:px-4 py-4 align-top">
+                      <strong>Spartan Food Industries</strong><br />
+                      Factory at Survey No. 155/1, Paiki Vill. Kidana,<br />
+                      Gandhidham, Kutch-370201, Gujarat.<br />
+                      Fssai Lic. No. 10017021002751
                     </td>
                   </tr>
                 </tbody>
@@ -721,73 +689,30 @@ const VeerBharatManufacturing = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-8">
-              <div className="w-32 h-32 bg-white rounded-full shadow-lg border-2 border-blue-200 flex items-center justify-center">
+              <div className="w-48 h-32 bg-white rounded-2xl shadow-lg border-2 border-blue-200 flex items-center justify-center">
                 <img
                   src="/veer-bharat-logo.jpg"
                   alt="Veer Bharat Logo"
-                  className="w-28 h-28 rounded-full object-contain"
+                  className="w-44 h-24 object-contain rounded-xl"
                 />
               </div>
 
               <div className="ml-6 text-left">
-                <h2 className="text-4xl font-bold text-blue-900 mb-2">
-                  Contact Us
-                </h2>
-                <p className="text-2xl text-blue-700 font-semibold">
-                  VEER BHARAT
-                </p>
+                <h2 className="text-4xl font-bold text-blue-900 mb-2">Contact Us</h2>
+                <p className="text-2xl text-blue-700 font-semibold">VEER BHARAT</p>
                 <p className="text-lg text-blue-600">वाह! मजा आ गया</p>
               </div>
             </div>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: '🏢',
-                title: 'Head Office',
-                content:
-                  'Sri Shyam Agro Industries\n802, 8th Floor, Tower-C, Ithum\nPlot No-A-40, Rajat Vihar\nSector 62, Noida, Uttar Pradesh 201020, India',
-                bgColor: 'bg-blue-50',
-                borderColor: 'border-blue-200',
-                iconBg: 'bg-blue-500',
-              },
-              {
-                icon: '📧',
-                title: 'Email',
-                content:
-                  'info@veer-bharat.com\nsale@veer-bharat.com',
-                bgColor: 'bg-purple-50',
-                borderColor: 'border-purple-200',
-                iconBg: 'bg-purple-500',
-              },
-              {
-                icon: '📞',
-                title: 'Phone',
-                content: '+91 0120-4550138\n+91 9871769051',
-                bgColor: 'bg-pink-50',
-                borderColor: 'border-pink-200',
-                iconBg: 'bg-pink-500',
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className={`${item.bgColor} p-8 rounded-xl shadow-lg border-2 ${item.borderColor} hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300`}
-              >
-                <div
-                  className={`w-16 h-16 ${item.iconBg} rounded-xl flex items-center justify-center mx-auto mb-6 shadow-md border-2 border-white`}
-                >
-                  <span className="text-2xl">{item.icon}</span>
-                </div>
-                <h3 className="text-2xl font-bold text-blue-900 mb-4 text-center">
-                  {item.title}
-                </h3>
-                <p className="text-blue-800 leading-relaxed whitespace-pre-line text-center">
-                  {item.content}
-                </p>
-              </div>
-            ))}
+          {/* Official Contact Info */}
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <p className="text-lg text-blue-800 font-medium">
+              📍 8th Floor, Tower B, Ithum, Plot No-A-40, Sector 62, Noida, Uttar Pradesh 201301
+            </p>
+            <p className="text-lg text-blue-800 font-medium">📞 9266328444</p>
+            <p className="text-lg text-blue-800 font-medium">🕒 Open Hours: 10:00 AM – 6:00 PM</p>
           </div>
         </div>
       </div>
