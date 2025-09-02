@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 // import React, { useState } from 'react';
 
 // const VeerBharatManufacturing = () => {
@@ -475,17 +475,6 @@ const VeerBharatManufacturing = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Fixed Logo - Bigger Rounded Box */}
-      <div className="fixed top-2 left-4 z-[60]">
-        <div className="w-48 h-22 bg-white rounded-2xl border-4 border-blue-300 shadow-xl flex items-center justify-center hover:scale-105 transition-transform duration-300">
-          <img
-            src="/veer-bharat-logo.jpg"
-            alt="Veer Bharat Logo"
-            className="w-44 h-24 object-contain rounded-xl"
-          />
-        </div>
-      </div>
-
       {/* Navbar */}
       <nav
         className={`fixed w-full z-50 transition-all duration-500 ${scrolled
@@ -495,12 +484,19 @@ const VeerBharatManufacturing = () => {
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between py-4">
-            {/* Brand Name */}
-            <div className="relative ml-52">
-              <h1 className="text-2xl md:text-3xl font-black bg-gradient-to-r from-blue-900 via-purple-800 to-pink-700 bg-clip-text text-transparent tracking-wide">
-                VEER BHARAT
-              </h1>
-              <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+            {/* Logo and Brand Name */}
+            <div className="flex items-center space-x-4">
+              <img
+                src="/veer-bharat-logo.jpg"
+                alt="Veer Bharat Logo"
+                className="w-28 h-24 object-contain"
+              />
+              <div className="relative">
+                <h1 className="text-2xl md:text-3xl font-black bg-gradient-to-r from-blue-900 via-purple-800 to-pink-700 bg-clip-text text-transparent tracking-wide">
+                  VEER BHARAT
+                </h1>
+                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+              </div>
             </div>
 
             {/* Desktop Menu */}
@@ -689,15 +685,13 @@ const VeerBharatManufacturing = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-8">
-              <div className="w-48 h-32 bg-white rounded-2xl shadow-lg border-2 border-blue-200 flex items-center justify-center">
-                <img
-                  src="/veer-bharat-logo.jpg"
-                  alt="Veer Bharat Logo"
-                  className="w-44 h-24 object-contain rounded-xl"
-                />
-              </div>
+              <img
+                src="/veer-bharat-logo.jpg"
+                alt="Veer Bharat Logo"
+                className="w-28 h-24 object-contain mr-6"
+              />
 
-              <div className="ml-6 text-left">
+              <div className="text-left">
                 <h2 className="text-4xl font-bold text-blue-900 mb-2">Contact Us</h2>
                 <p className="text-2xl text-blue-700 font-semibold">VEER BHARAT</p>
                 <p className="text-lg text-blue-600">वाह! मजा आ गया</p>
@@ -709,15 +703,15 @@ const VeerBharatManufacturing = () => {
           {/* Official Contact Info */}
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <p className="text-lg text-blue-800 font-medium">
-              📍 8th Floor, Tower B, Ithum, Plot No-A-40, Sector 62, Noida, Uttar Pradesh 201301
+               8th Floor, Tower B, Ithum, Plot No-A-40, Sector 62, Noida, Uttar Pradesh 201301
             </p>
             <p className="text-lg text-blue-800 font-medium">📞 9266328444</p>
-            <p className="text-lg text-blue-800 font-medium">🕒 Open Hours: 10:00 AM – 6:00 PM</p>
+            {/* <p className="text-lg text-blue-800 font-medium">🕒 Open Hours: 10:00 AM – 6:00 PM</p> */}
           </div>
         </div>
       </div>
     </div>
-  );
+  );    
 };
 
 export default VeerBharatManufacturing;
